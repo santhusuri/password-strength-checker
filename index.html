@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password  Strength Checker</title>
+    <link rel="stylesheet" href='password.css'>
+
+</head>
+<body>
+    <center>
+    <header>
+        <h1>Password  Strength Checker</h1>    
+    </header>
+    <main>
+        <h3> Strong password must meet certain criteria to ensure security.</h3>
+        These criteria may vary depending on the system or organization, but common requirements include:
+        <br>
+       
+       <div>
+        <table border="2" style="margin: 20px;">
+            <tr>
+              <th>Password Requirement</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Minimum length</td>
+              <td>Usually 8-12 characters</td>
+            </tr>
+            <tr>
+              <td>Mix of uppercase and lowercase letters</td>
+              <td>A-Z   &  a-z</td>
+            </tr>
+            <tr>
+              <td>At least one number</td>
+              <td>0123456789</td>
+            </tr>
+            <tr>
+              <td>At least one special character</td>
+              <td>Such as !, @, #, etc.</td>
+            </tr>
+            <tr>
+              <td>No easily guessable information</td>
+              <td>Like your name, birthdate, or common words</td>
+            </tr>
+            <tr>
+              <td>No sequential characters</td>
+              <td>Like "123" or "abc"</td>
+            </tr>
+            <tr>
+              <td>No repeating characters</td>
+              <td>Like "aaa" or "111"</td>
+            </tr>
+        </table>
+      </div>
+              
+      <div>
+        <form>
+          <label for="password">Enter a password:</label>
+          <input type="password" id="password" name="password">
+          <button type="submit" onclick="checkPasswordStrength()">Check strength</button>
+          <div id="strength-meter"></div>
+        </form>
+      </div>
+                
+        <br>
+        <br>       
+        <strong>It's also a good idea to use a unique password for each account and to change your passwords regularly.</strong><br>
+        <br>
+    </center>
+    </main>
+
+    <script  src='password.js'></script>
+    </body>
+    </html>
